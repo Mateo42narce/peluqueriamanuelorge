@@ -3,7 +3,7 @@ let citas = JSON.parse(localStorage.getItem('citas')) || [];
 
 // Guardar cita cuando se envía el formulario
 document.getElementById('citaForm').addEventListener('submit', function(e){
-  e.preventDefault();
+  e.preventDefault(); // evita recargar la página
   const nombre = document.getElementById('nombre').value;
   const fecha = document.getElementById('fecha').value;
   const hora = document.getElementById('hora').value;

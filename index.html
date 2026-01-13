@@ -3,6 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>Peluquería Manu Orge</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f0ff; /* azul suave */
+      color: #003366; /* azul oscuro */
+      text-align: center;
+    }
+
+    h1 { color: #0055cc; }
+    h2 { color: #004080; }
+    button {
+      background-color: #0073e6;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 5px;
+    }
+    button:hover { background-color: #005bb5; }
+    input { padding: 5px; margin: 5px 0; }
+    hr { border: 1px solid #004080; }
+    ul { list-style-type: none; padding: 0; }
+  </style>
 </head>
 <body>
   <h1>Peluquería Manu Orge 💈</h1>
@@ -19,14 +43,14 @@
 
   <h2>Área de Administración</h2>
   <label>Contraseña: <input type="password" id="pass"></label>
-  <button id="loginBtn">Entrar</button>
+  <button id="loginBtn" type="button">Entrar</button>
 
   <div id="citasAdmin" style="display:none;">
     <h3>Citas recibidas:</h3>
     <ul id="listaCitas"></ul>
   </div>
 
-  <!-- Vincular JavaScript -->
+  <!-- Vincular JavaScript al final del body -->
   <script src="script.js"></script>
 </body>
 </html>
