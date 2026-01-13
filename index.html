@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Peluquería Manu Orge</title>
+</head>
+<body>
+  <h1>Peluquería Manu Orge 💈</h1>
+
+  <h2>Formulario de Citas</h2>
+  <form id="citaForm">
+    <label>Nombre del cliente: <input type="text" id="nombre" required></label><br><br>
+    <label>Fecha: <input type="date" id="fecha" required></label><br><br>
+    <label>Hora: <input type="time" id="hora" required></label><br><br>
+    <button type="submit">Enviar cita</button>
+  </form>
+
+  <hr>
+
+  <h2>Área de Administración</h2>
+  <label>Contraseña: <input type="password" id="pass"></label>
+  <button id="loginBtn">Entrar</button>
+
+  <div id="citasAdmin" style="display:none;">
+    <h3>Citas recibidas:</h3>
+    <ul id="listaCitas"></ul>
+  </div>
+
+  <!-- Vincular JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
